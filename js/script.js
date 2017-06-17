@@ -28,3 +28,8 @@ function mostrarColores() {
         cambiaColor(id, "background-color:'';", tAux * retraso);
     }
 }
+function cambiaColor(id, estilo, t) {
+    setTimeout(function(){
+        document.getElementById(id).style = estilo;
+    }, t);
+}
