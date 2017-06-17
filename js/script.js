@@ -55,3 +55,24 @@ function reiniciar() {
     document.getElementById('nivel').innerHTML = "";
     document.getElementById('negro').innerHTML = "<button id='boton' onclick='comenzar()'>START!</button>";
 }
+function comprobarRecord(nombre) {
+    var topRecord = 5, matriz;
+    if (document.cookie.length != 0) {
+        matriz = leerCookie();
+        var index = 1;
+        matriz.sort(function(a, b) {
+            var valueA = a[1];
+            var valueB = b[1];
+            if (valueA < valueB) {
+                return -1;
+            } else if (valueA > valueB) {
+                return 1;
+            }
+            return 0;
+        });
+        for (var i=0; i<matriz[0].length; i++) {
+            alert(matriz[i][0] + " - " + matriz[i][1]);
+        }
+    }
+	crearCookie(nombre + "=" + nivel, 1);
+}
