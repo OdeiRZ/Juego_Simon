@@ -5,6 +5,10 @@ Aplicación web desarrollada mediante JavaScript y HTML que simula el clásico j
 El juego permite aumentar los niveles de dificultad conforme el jugador va acertando los
 retos anteriores.
 
+Desde el Programa podremos pulsar varios botones con colores diferentes que irán
+cambiando automáticamente, al acabar el juego, si se ha realizado un nuevo record, 
+la aplicación almacenará nuestros datos en una cookie para futuras referencias.
+
 ## Requisitos
 - Navegador Web [Chrome], [Firefox], [Opera], [Microsoft Edge], etc..
 
