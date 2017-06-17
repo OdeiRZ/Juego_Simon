@@ -76,3 +76,9 @@ function comprobarRecord(nombre) {
     }
 	crearCookie(nombre + "=" + nivel, 1);
 }
+function crearCookie(dato, caducidad) {
+    var d = new Date();
+    d.setDate(d.getDate() + caducidad);
+    document.cookie = dato + "; "+"expires=" + d.toGMTString();
+    leerCookie();
+}
