@@ -49,3 +49,9 @@ function comprobarColor(id) {
         }
     }
 }
+function reiniciar() {
+    nivel = 0;
+    vector = new Array();
+    document.getElementById('nivel').innerHTML = "";
+    document.getElementById('negro').innerHTML = "<button id='boton' onclick='comenzar()'>START!</button>";
+}
