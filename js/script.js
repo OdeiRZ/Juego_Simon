@@ -7,3 +7,12 @@ window.onload=function() {
 };
 
 var colores = ["rojo", "azul", "verde", "amarillo"], vector = new Array(), conColor, nivel = 0;
+
+function comenzar() {
+    nivel++;
+    conColor = 0;
+    document.getElementById('nivel').innerHTML = "Nivel " + nivel;
+    vector.push(parseInt(Math.random() * colores.length));
+    mostrarColores();
+    document.getElementById('negro').innerHTML = "Turno del jugador";
+}
