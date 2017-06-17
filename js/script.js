@@ -82,3 +82,15 @@ function crearCookie(dato, caducidad) {
     document.cookie = dato + "; "+"expires=" + d.toGMTString();
     leerCookie();
 }
+function leerCookie() {
+    if (document.cookie.length != 0) {
+        var matriz = [[]];
+        var datos = document.cookie.split("; ");
+        for (var i=0; i<datos.length; i++) {
+            var pos = datos[i].indexOf("=");
+            matriz[i][0] = datos[i].substring(0, pos);
+            matriz[i][1] = datos[i].substring(pos + 1);
+        }
+        return matriz; 	//alert("Top " + datos.length + ":\n\n" + cadena);
+    }
+}
