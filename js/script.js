@@ -16,3 +16,15 @@ function comenzar() {
     mostrarColores();
     document.getElementById('negro').innerHTML = "Turno del jugador";
 }
+function mostrarColores() {
+    var coloresAux = ["#FF0000", "#0000FF", "#00FF00", "#FFFF00"];
+    var t = 1000;
+	var retraso = 1.2;
+    for (var i=0; i<vector.length; i++) {
+        var tAux = t + (i * t);
+        var color = coloresAux[vector[i]];
+        var id = colores[vector[i]];
+        cambiaColor(id, "background-color:" + color + ";", tAux);
+        cambiaColor(id, "background-color:'';", tAux * retraso);
+    }
+}
