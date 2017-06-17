@@ -33,3 +33,19 @@ function cambiaColor(id, estilo, t) {
         document.getElementById(id).style = estilo;
     }, t);
 }
+function comprobarColor(id) {
+    if (nivel != 0) {
+        if (id != colores[vector[conColor]]) {
+            alert("Lo Siento has perdido el Juego");
+            var nombre = prompt("Introduce tu Nombre para registrar tu Tiempo: ");
+            (nombre.length != 0 && nombre.indexOf("=") == -1) ? comprobarRecord(nombre) : "";
+            reiniciar(); 	//controlar pulsar cancelar
+        } else {
+            if (vector.length == conColor + 1) {
+                document.getElementById('negro').innerHTML = "<button id='boton' onclick='comenzar()'>Subir Nivel</button>";
+            } else {
+                conColor++;
+            }
+        }
+    }
+}
