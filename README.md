@@ -9,7 +9,7 @@ Desde el programa podremos pulsar varios botones con colores diferentes que irá
 cambiando automáticamente, al acabar el juego, si se ha realizado un nuevo record, 
 la aplicación almacenará nuestros datos en una cookie para futuras referencias.
 
-Para cualquier referencia relacionada con el sitio, podemos ver el portal desplegado 
+Para cualquier referencia relacionada con el sitio, podemos ver la aplicación desplegada 
 visitando el siguiente [enlace].
 
 ## Requisitos
