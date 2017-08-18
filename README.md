@@ -9,12 +9,16 @@ Desde el programa podremos pulsar varios botones con colores diferentes que irá
 cambiando automáticamente, al acabar el juego, si se ha realizado un nuevo record, 
 la aplicación almacenará nuestros datos en una cookie para futuras referencias.
 
+Para cualquier referencia relacionada con el sitio, podemos ver el portal desplegado 
+visitando el siguiente [enlace].
+
 ## Requisitos
 - Navegador Web [Chrome], [Firefox], [Opera], [Microsoft Edge], etc..
 
 ## Licencia
 Esta aplicación se ofrece bajo licencia [GPL versión 3].
 
+[enlace]: https://odeirz.github.io/Juego_Simon/public/
 [Chrome]: https://www.google.es/chrome/browser/desktop/index.html
 [Firefox]: https://www.mozilla.org/es-ES/firefox/new/
 [Opera]: http://www.opera.com/es
